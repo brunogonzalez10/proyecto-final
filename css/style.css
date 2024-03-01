@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+  background-color: #272525;
+}
+body header {
+  background-color: #333;
+  color: #1a1818;
+  padding: 20px;
+  text-align: center;
+}
+body header .bg-img {
+  width: 4rem;
+  border-radius: 30%;
+  align-items: center;
+}
+body header .navbar {
+  background-color: #333;
+  color: #fff;
+}
+body header .navbar .navbar-brand {
+  color: #fff;
+}
+body header .navbar .navbar-brand:hover {
+  color: #fff;
+}
+body header .navbar .nav-link {
+  color: #fff;
+}
+body header .navbar .nav-link:hover {
+  color: #fff;
+}
+body header h1.titulo-producto {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+body main {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+body main .titulo-pagina {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #b3aaaa;
+}
+body main section {
+  margin-bottom: 20px;
+}
+body main section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main section div img {
+  width: 24%; /* Tamaño de cada imagen con espacio entre ellas */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body main section .section-shoes div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main section .section-shoes div img {
+  width: 24%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body main section .section-shirts div img {
+  width: 24%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body main section .section-art img {
+  width: 24%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body main section .section-hoodies img {
+  width: 24%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

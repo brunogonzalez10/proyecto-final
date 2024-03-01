@@ -1,0 +1,146 @@
+// Estilos generales
+body {
+    background-color: #272525;
+
+
+ header {
+    background-color: #333;
+    color: #1a1818;
+    padding: 20px;
+    text-align: center;
+
+    .bg-img{
+        width: 4rem;
+        border-radius: 30%;
+        align-items: center;
+        
+
+    }
+
+    .navbar {
+        background-color: #333;
+        color: #fff;
+
+        .navbar-brand {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .nav-link {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    h1.titulo-producto {
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+ }
+
+ main{
+        max-width: 1200px;
+        margin: 20px auto;
+
+        .titulo-pagina {
+            font-family: "Satisfy", cursive;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 2rem;
+
+         color: #b3aaaa;
+
+        }
+
+     section {
+        margin-bottom: 20px;
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            img {
+                width: 24%; /* Tamaño de cada imagen con espacio entre ellas */
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        // Estilos específicos para cada sección
+        
+
+        .section-shoes {
+            // Estilos específicos para la sección de shoes
+            div{
+
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-between;
+
+
+             img {
+                // Tamaño de las imágenes de shoes
+                width: 24%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+             }
+
+            }
+        }
+
+        .section-shirts {
+            // Estilos específicos para la sección de shirts
+            div{
+             img {
+                // Tamaño de las imágenes de shirts
+                width: 24%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+             }
+            }
+        }
+
+        .section-art {
+            // Estilos específicos para la sección de art
+            img {
+                // Tamaño de las imágenes de art
+                width: 24%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .section-hoodies {
+            // Estilos específicos para la sección de hoodies
+            img {
+                // Tamaño de las imágenes de hoodies
+                width: 24%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+ }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
