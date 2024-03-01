@@ -50,9 +50,14 @@ body main section {
   margin-bottom: 20px;
 }
 body main section div {
+  border: 4px solid rgb(90, 88, 88);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transition: transform 0.4s;
+}
+body main section div:hover {
+  transform: scale(1.1);
 }
 body main section div img {
   width: 24%; /* Tamaño de cada imagen con espacio entre ellas */
