@@ -1,10 +1,10 @@
-@charset "UTF-8";
 body {
   background-color: #272525;
+  color: #fff;
 }
 body header {
   background-color: #333;
-  color: #1a1818;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
@@ -18,93 +18,167 @@ body header .navbar {
   color: #fff;
 }
 body header .navbar .navbar-brand {
-  color: #fff;
+  font-family: "Cinzel Decorative", serif;
+  color: #ccc;
 }
 body header .navbar .navbar-brand:hover {
   color: #fff;
 }
-body header .navbar .nav-link {
+body header .navbar .navbar-nav .nav-link {
   color: #fff;
 }
-body header .navbar .nav-link:hover {
+body header .navbar .navbar-nav .nav-link.active {
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  color: #ccc;
+}
+body header .navbar .navbar-nav .nav-link:hover {
   color: #fff;
+}
+body header .navbar .navbar-toggler {
+  border-color: #ccc;
+}
+body header .navbar .navbar-toggler:hover {
+  border-color: #ccc;
+}
+body header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-color: black;
 }
 body header h1.titulo-producto {
-  font-family: "Satisfy", cursive;
-  font-weight: 400;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 310;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 body main {
   max-width: 1200px;
   margin: 20px auto;
 }
 body main .titulo-pagina {
-  font-family: "Satisfy", cursive;
+  font-family: "Cinzel Decorative", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  color: #b3aaaa;
+  color: #fff;
 }
 body main section {
   margin-bottom: 20px;
-}
-body main section div {
-  border: 4px solid rgb(90, 88, 88);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main section article {
+  border: 4px salmon #333;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   transition: transform 0.4s;
 }
-body main section div:hover {
+body main section article:hover {
   transform: scale(1.1);
 }
-body main section div img {
-  width: 24%; /* Tamaño de cada imagen con espacio entre ellas */
-  height: auto;
+body main section article img {
+  width: 30vh;
+  height: 100%;
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-body main section .section-shoes div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+body main section article p {
+  font-family: "Julius Sans One", sans-serif;
+  color: #fff;
+  margin: 10px;
+  font-size: 1rem;
 }
-body main section .section-shoes div img {
-  width: 24%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+body main section article span {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-body main section .section-shirts div img {
-  width: 24%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-body main section .section-art img {
-  width: 24%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-body main section .section-hoodies img {
-  width: 24%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
+body footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 20px;
+}
+@media (max-width: 1396px) {
+  body header {
+    padding: 10px;
+  }
+  body .bg-img {
+    width: 3rem;
+  }
+  body .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+  body .navbar .nav-link {
+    font-size: 1rem;
+  }
+  body h1.titulo-producto {
+    font-size: 2rem;
+  }
+  body main .titulo-pagina {
+    font-size: 1.5rem;
+  }
+  body main section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  body main section article {
+    width: 100%;
+  }
+  body main section article img {
+    width: 100%;
+  }
+  body main section article p {
+    font-size: 1rem;
+  }
+  body main section article span {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  body header {
+    padding: 10px;
+  }
+  body header .bg-img {
+    width: 3rem;
+  }
+  body header .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+  body header .navbar .nav-link {
+    font-size: 1rem;
+  }
+  body header h1.titulo-producto {
+    font-size: 2rem;
+  }
+  body main .titulo-pagina {
+    font-size: 1.5rem;
+  }
+  body main section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+  }
+  body main section article {
+    width: 100%;
+  }
+  body main section article img {
+    width: 100%;
+  }
+  body main section article p {
+    margin: 10px;
+    font-size: 1rem;
+  }
+  body main section article span {
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
